@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bookmarklets</h1>
+    <div>
+      <p>Godmode (Bookmarklet)</p>
+      <p>
+        javascript:{a=document.createElement("textarea"),b=document.createElement("button"),a.style="position:
+        fixed; top: 25%; left: 12.5%; z-index: 10000; width: 75%; height:
+        50%;",b.style="position: fixed; top: 77%; left: 45%; z-index: 10000;
+        width: 10%; height:
+        5%;",b.innerHTML="Run",document.body.append(a),document.body.append(b),b.addEventListener("click",e=>{let
+        v=a.value;a.remove(),b.remove(),a=void 0,b=void
+        0,eval(v)})};/*Naitronbomb Gamer & https://requals.github.io*/
+      </p>
+      <button onclick="copyText(this)">Copy Bookmarklet</button>
+    </div>
+    <div>
+      <p>Ruffle Flash Emulator (Snippet)</p>
+      <p>
+        https://raw.githubusercontent.com/Requals/Bookmarklet-Snippets/main/snippets/rufflecivilwardiscoveries.txt
+      </p>
+    </div>
+    <div class="placeholder">
+      <p>placeholder</p>
+      <p>javascript:placeholder</p>
+      <button onclick="copyText(this)">Copy Bookmarklet</button>
+    </div>
+    <hr>
+    <section></section>
+      <h1>FAQ</h1>
+      <section class="question">
+        How do I paste text?
+      </section>
+      <p class="biganswer">Press <kbd>&#8984</kbd> + <kbd>V</kbd> or <kbd>CTRL</kbd> + <kbd>V</kbd></p>
+      <section class="question">
+        How do I add a bookmarklet in Safari (iOS)?
+      </section>
+      <p>Step 1: Click the upload button.<br>Step 2: Tap "Add Bookmark" on any website.<br>Step 3: Open your bookmarks.<br>Step 4: Locate the newly added bookmark, and paste your bookmarklet as the URL (link).<br>Step 4.5 (Optional): Change the name of the bookmark to whatever you want.<br>Step 5: Save your changes, and activate the bookmark. It should work.</p>
+
+    </section>
+    <script src="main.js">
+    </script>
+  </body>
+</html>

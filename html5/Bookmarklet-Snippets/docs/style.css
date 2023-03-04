@@ -1,0 +1,50 @@
+html {
+	background-color: #111111;
+	color: #cccccc;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+body {
+	counter-reset: question;
+}
+h1 {
+	text-align: center;
+	font-size: 48px;
+}
+div {
+	border: 2px #338833 solid;
+	padding: 10px;
+	margin: 20px;
+}
+div > p:nth-child(1) {
+	font-size: 32px;
+}
+button {
+	background-color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 2px #338833 solid;
+	color: white;
+}
+button:active {
+	background-color: #666;
+}
+kbd {
+	background-color: #ccc;
+	box-shadow: 0px 4px #666, inset -1px -1px 1px #999, inset 1px 1px 1px #ddd;
+	color: black;
+	padding: 8px;
+	margin: 0px 4px;
+	font-size: 18px;
+	border-radius: 4px;
+	border: 2px solid #aaa;
+}
+.placeholder {
+	display: none !important;
+}
+.biganswer {
+	padding: 24px;
+}
+.question::before {
+	counter-increment: question;
+	content: "Question " counter(question) ": ";
+}

@@ -1,0 +1,25 @@
+.header{
+    font-size: 50px;
+  }
+  #container{
+    border: 5px solid grey;
+    border-radius: 5px;
+    background-color: #EFFFFF;
+  }
+  a{
+    font-size: 30px;
+    margin-left: 32px;
+  }
+  p{
+    font-size: 22px;
+  }
+  hr{
+    border-top: 2px solid grey;
+    border-bottom: 2px solid #CFCFCF;
+  }
+  #container, .header{
+    font-family: "Trebuchet MS", sans-serif;
+  }
+  body{
+    background-color: #DFFFFF;
+  }
